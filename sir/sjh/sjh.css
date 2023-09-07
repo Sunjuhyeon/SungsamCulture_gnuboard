@@ -1,0 +1,183 @@
+body,
+.ks4,
+.ks5,
+a,
+span,
+p {
+    font-family: 'Plus Jakarta Sans', 'Gothic A1', sans-serif !important;
+    font-weight: 400;
+    letter-spacing: -0.005em;
+}
+
+
+/* 네비게이션 */
+.megamenu-li .f16 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.megamenu-li .f16::after {
+    content: none;
+}
+
+.navbar-nav li {
+    padding: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.submenu {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.submenu li {
+    width: 100%;
+}
+
+.submenu li a {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    color: #333;
+    font-weight: 700;
+}
+
+.megamenu-li:hover .nav-link {
+    color: rgb(6, 97, 255);
+}
+
+.submenu li a:hover {
+    color: rgb(6, 97, 255);
+    position: relative;
+}
+
+.submenu li a:hover::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 50%;
+    background-color: rgb(6, 97, 255);
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.submenuBg {
+    height: 0;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100vw;
+    background-color: #ffffff;
+    transition: 0.5s;
+}
+
+.nav-link {
+    color: #333;
+}
+
+.mobile .on .submenu {
+    max-height: 20rem;
+}
+
+@media(min-width:992px) {
+    .navbar-nav:hover .submenu {
+        max-height: 20rem;
+    }
+    .navbar-nav:hover .submenuBg {
+        height: 20rem;
+    }
+}
+
+@media(max-width:991px) {
+    .navbar-nav {
+        padding: 3rem 0;
+        justify-content: center;
+    }
+
+    .megamenu-li {
+        padding-bottom: 2rem !important;
+    }
+
+    .nav-link {
+        border-bottom: 1px solid #666;
+    }
+
+    .submenu {
+        position: static;
+    }
+}
+
+/* 상단롤링 배너 */
+.topad {
+    height: 2rem;
+    width: 100%;
+    background-color: rgb(209, 225, 255);
+}
+
+.topad a {
+    display: block;
+    text-align: center;
+}
+
+
+.material-icons-outlined {
+    font-size: 23px;
+}
+
+.btn {
+    padding: 0.25rem 0.5rem !important;
+}
+
+.btn .fa+.sound_only {
+    position: unset !important;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    overflow: auto !important;
+    white-space: nowrap;
+    color: #333;
+}
+
+a.btn_b01,
+.btn_b01,
+a.btn_admin,
+.btn_admin {
+    background-color: white;
+}
+
+.btn_bo_user li {
+    width: fit-content;
+}
+
+#top_btn {
+    border: 1px solid #a9a9a9 !important;
+}
+
+#top_btn .fa:before {
+    content: "\F286";
+    font-family: bootstrap-icons !important;
+    font-size: 1.5rem;
+}
+
+i {
+    font-style: normal !important;
+}
+
+.scroll .navbar {
+    top: -2rem;
+    transition: 0.5s;
+}
